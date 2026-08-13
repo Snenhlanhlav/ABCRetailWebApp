@@ -1,0 +1,35 @@
+﻿@model List<ABCRetailWebApp.Models.CustomerProfile>
+
+<h2>Customers</h2>
+
+<a asp-action="Create" class="btn btn-primary mb-3">Add New Customer</a>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Address</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var customer in Model)
+        {
+            <tr>
+                <td>@customer.Name</td>
+                <td>@customer.Email</td>
+                <td>@customer.Phone</td>
+                <td>@customer.Address</td>
+                <td>
+                    <form asp-action="Delete" method="post" style="display:inline">
+                        <input type="hidden" name="partitionKey" value="@customer.PartitionKey" />
+                        <input type="hidden" name="rowKey" value="@customer.RowKey" />
+                        <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

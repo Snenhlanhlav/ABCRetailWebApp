@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ABCRetailWebApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dca2c690ce0bdc16a7e052ad927cc2e0c2a64935")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0e46d9be7410c1075d19663ef14566d935e5c6b0")]
 [assembly: System.Reflection.AssemblyProductAttribute("ABCRetailWebApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ABCRetailWebApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

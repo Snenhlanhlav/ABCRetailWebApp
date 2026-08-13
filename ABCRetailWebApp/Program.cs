@@ -3,6 +3,14 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+// Add services to the container.
+builder.Services.AddControllersWithViews();
+
+builder.Services.AddSingleton<ABCRetailWebApp.Services.TableStorageService>();
+builder.Services.AddSingleton<ABCRetailWebApp.Services.BlobStorageService>();
+builder.Services.AddSingleton<ABCRetailWebApp.Services.QueueStorageService>();
+builder.Services.AddSingleton<ABCRetailWebApp.Services.FileStorageService>();
+
 var app = builder.Build();
 
 
